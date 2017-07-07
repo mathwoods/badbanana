@@ -49,7 +49,7 @@ def ask_range():
         try:
             val_1 = int(val_1)
         except ValueError:
-            print(" '%s' is not a whole number. Try again :-)." % val_1)
+            print("'%s' is not a whole number. Try again :-)." % val_1)
             continue
 
         if val_1 < 0:
@@ -64,7 +64,7 @@ def ask_range():
         try:
             val_2 = int(val_2)
         except ValueError:
-            print(" '%s' is not a whole number. Try again :-)." % val_2)
+            print("'%s' is not a whole number. Try again :-)." % val_2)
             continue
 
         if val_2 < 0:
@@ -124,7 +124,7 @@ while True:
         try:
             ans = int(ans)
         except ValueError:
-            print(" '%s' is not a whole number. Try again :-)." % ans)
+            print("'%s' is not a whole number. Try again :-)." % ans)
             continue
 
         break
