@@ -1,10 +1,5 @@
 from game import happyface, sadface, banana
 
-def print_score(score):
-    print("Current score: %s" % score)
-
-def print_lives(lives):
-    print("Lives left: %s" % lives)
 
 def ask_range():
     print("From which to which whole numbers you would like to multiply?")
@@ -72,8 +67,8 @@ def run() -> None:
     print("Lose three lives and you're a BAD BANANA :-p!")
     print("Type q at a question if you want to quit.\n")
 
-    print_score(score)
-    print_lives(lives)
+    print("Current score: %s" % score)
+    print("Lives left: %s" % lives)
 
     while True:
         x = random.randint(min_int, max_int)
@@ -115,5 +110,5 @@ def run() -> None:
             print(sadface)
             print("\nAck!! Wrong answer!")
 
-        print_score(score)
-        print_lives(lives)
+        print("Current score: %s" % score)
+        print("Lives left: %s" % lives)
