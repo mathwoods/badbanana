@@ -36,6 +36,12 @@ def _ask_range() -> (int, int):
     return val_1, val_2
 
 
+def _show_status(score : int, lives : int) -> None:
+    assert score >= 0 and lives >= 0, "Score and lives must be non-negative integers."
+    print(f"Current score: {score}")
+    print(f"Lives left: {lives}")
+    
+
 def play() -> None:
     lives = 3
     score = 0
@@ -52,8 +58,7 @@ def play() -> None:
     print("If you get a question wrong, you lose a life.")
     print("Lose three lives and you're a BAD BANANA :-p!")
     print("Type q at a question if you want to quit.\n")
-    print("Current score: %s" % score)
-    print("Lives left: %s" % lives)
+    _show_status(score, lives)
 
     while True:
         x = random.randint(min_int, max_int)
@@ -87,5 +92,4 @@ def play() -> None:
                 print(sadface)
                 print("\nAck!! Wrong answer!")
 
-        print("Current score: %s" % score)
-        print("Lives left: %s" % lives)
+        _show_status(score, lives)
