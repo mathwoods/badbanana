@@ -3,7 +3,7 @@ import sys
 
 from game import happyface, sadface, banana
 
-def ask_range() -> (int, int):
+def _ask_range() -> (int, int):
     print("From which to which whole numbers you would like to multiply?")
     while True:
         val_1 = input("From: ")
@@ -43,7 +43,7 @@ def play() -> None:
     print("\nWELCOME TO BAD BANANA!\n")
     name = input("What's your name? ")
     print("\nHi " + name + "!\n")
-    min_int, max_int  = ask_range()
+    min_int, max_int  = _ask_range()
 
     print("\nOk then :-)!\n")
     print("Try to multiply whole numbers between %s and %s." % (min_int, max_int))
