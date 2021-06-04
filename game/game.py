@@ -1,12 +1,10 @@
-from .draw import draw_banana, draw_happyface, draw_sadface
+from game import happyface, sadface, banana
 
 def print_score(score):
     print("Current score: %s" % score)
 
-
 def print_lives(lives):
     print("Lives left: %s" % lives)
-
 
 def ask_range():
     print("From which to which whole numbers you would like to multiply?")
@@ -101,8 +99,7 @@ def run() -> None:
 
         if ans == right_answer:
             score = score + 1
-
-            draw_happyface()
+            print(happyface)
             print("\nAwesome stuff!!!")
 
 
@@ -110,12 +107,12 @@ def run() -> None:
             lives = lives - 1
 
             if lives == 0:
-                draw_banana()
+                print(banana)
                 print("Ahhh!!! You lost all your lives! You're a BAD BANANA!!!")
                 print("Better luck next time :-P!\n")
                 sys.exit(0)
 
-            draw_sadface()
+            print(sadface)
             print("\nAck!! Wrong answer!")
 
         print_score(score)
