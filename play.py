@@ -12,4 +12,4 @@ Last modified: July 7, 2017
 from game import game
 
 if __name__ == '__main__':
-    game.run()
+    game.play()
