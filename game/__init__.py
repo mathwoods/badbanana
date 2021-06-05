@@ -9,6 +9,9 @@ try:
     with open("./art/asciiart/badbanana.txt") as f:
         banana = f.read()
 except OSError as err:
-        print("OSError: {0}".format(err))
-        sys.exit(1)
-        
+        print("WARNING: Unable to load one or more ASCII art files. Using emojis instead.")
+        happyface = '😁'        
+        sadface = '😔'
+        banana = '💩 🍌 💩'
+        # Enable if you want more error details.
+        # print("OSError: {0}".format(err))

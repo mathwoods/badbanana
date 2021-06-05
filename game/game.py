@@ -84,7 +84,7 @@ def play() -> None:
         else:
             lives = lives - 1
             if lives == 0:
-                print(banana)
+                print(banana, '\n')
                 print("Ahhh!!! You lost all your lives! You're a BAD BANANA!!!")
                 print("Better luck next time :-P!\n")
                 sys.exit(0)
