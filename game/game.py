@@ -3,6 +3,7 @@ import sys
 
 from game import happyface, sadface, banana
 
+
 def _show_status(score : int, lives : int) -> None:
     assert score >= 0 and lives >= 0, "Score and lives must be non-negative integers."
     print(f"Current score: {score}")
@@ -33,11 +34,10 @@ def play() -> None:
             continue
         break
     print("\nOk then :-)!\n")
-    
+
     print(f"Try to multiply whole numbers between {min_int} and {max_int}.")
-    print("To play, just answer the following questions.")
-    print("If you get a question right, you get one point.")
-    print("If you get a question wrong, you lose a life.")
+    print("Get a question right, get one point.")
+    print("Get a question wrong, lose a life.")
     print("Lose three lives and you're a BAD BANANA :-p!")
     print("Type q at a question if you want to quit.\n")
     _show_status(score, lives)
