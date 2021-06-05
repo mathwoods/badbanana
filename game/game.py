@@ -10,7 +10,7 @@ def _ask_range() -> (int, int):
         try:
             val_1 = int(val_1)
         except ValueError:
-            print("'%s' is not a whole number. Try again :-)." % val_1)
+            print(f"'{val_1}' is not a whole number. Try again :-).")
             continue
         if val_1 < 0:
             print("Positive integers only please. Try again :-).")
@@ -22,7 +22,7 @@ def _ask_range() -> (int, int):
         try:
             val_2 = int(val_2)
         except ValueError:
-            print("'%s' is not a whole number. Try again :-)." % val_2)
+            print(f"'{val_2}' is not a whole number. Try again :-).")
             continue
         if val_2 < 0:
             print("Positive integers only please. Try again :-).")
@@ -48,11 +48,11 @@ def play() -> None:
 
     print("\nWELCOME TO BAD BANANA!\n")
     name = input("What's your name? ")
-    print("\nHi " + name + "!\n")
+    print(f"\nHi {name}!\n")
     min_int, max_int  = _ask_range()
 
     print("\nOk then :-)!\n")
-    print("Try to multiply whole numbers between %s and %s." % (min_int, max_int))
+    print(f"Try to multiply whole numbers between {min_int} and {max_int}.")
     print("To play, just answer the following questions.")
     print("If you get a question right, you get one point.")
     print("If you get a question wrong, you lose a life.")
@@ -65,14 +65,14 @@ def play() -> None:
         y = random.randint(min_int, max_int)
 
         while True:
-            ans = input("\nWhat is %s * %s? " % (x,y))
+            ans = input(f"\nWhat is {x} * {y}? ")
             if ans == 'q':
                 print ("\nThanks for playing Bad Banana. See you next time :-D!\n")
                 sys.exit()
             try:
                 ans = int(ans)
             except ValueError:
-                print("'%s' is not a whole number. Try again :-)." % ans)
+                print(f"{ans}' is not a whole number. Try again :-).")
                 continue
             break
 
