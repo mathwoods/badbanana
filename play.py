@@ -9,7 +9,10 @@ Created by Mathwoods, June-July 2017
 Last modified: July 7, 2017
 ********************************************************************************
 '''
-from game import game
+from badbanana.cli.cligame import CliGame
+from badbanana.player import Player
 
 if __name__ == '__main__':
+    player = Player()
+    game = CliGame(player=player)
     game.play()
