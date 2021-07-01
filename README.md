@@ -1,10 +1,17 @@
-# badbanana
-A text-based game in which a player mentally multiplies two whole numbers as many times as possible.
+# Bad Banana
+A text-based game that challenges players to add, subtract, multiply or divide integers 
+as many times as possible.
 
-Use Python 3.4.1 to run the script, if possible. Other versions may work, but I only tested it with this one. In your shell, type
+Please use Python 3.8+ to run this game on your command line as I use the walrus operator
+at least several times for this project. 
 
-<b>python3 badbanana_mathgame.py</b>
+The easiest way to try Bad Banana out is to clone the repo and run the following command from the 
+project's root folder.
+
+```
+>> python3 play.py
+```
 
 Enjoy!
 
-MW
+MW / dunnesquared
